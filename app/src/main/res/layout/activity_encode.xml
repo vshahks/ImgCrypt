@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EncodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar_layout"/>
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_get_image1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="110dp"
+            android:onClick="uploadImage1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="0"
+            android:background="@drawable/selector_btn_white"
+            android:stateListAnimator="@null"
+            android:text="@string/upload_image1"
+            app:theme="@style/AppTheme.ButtonStyle2"></android.support.v7.widget.AppCompatButton>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_get_image2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:onClick="uploadImage2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="0"
+            android:background="@drawable/selector_btn_white"
+            android:stateListAnimator="@null"
+            android:text="@string/upload_image2"
+            app:theme="@style/AppTheme.ButtonStyle2"></android.support.v7.widget.AppCompatButton>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageViewBase"
+            android:layout_above="@+id/button_get_image1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_get_image1" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageViewSecret"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_get_image2" />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_main_versions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="0"
+        android:text="@string/all_app_version"
+        android:textColor="#a0a0a0"
+        android:textSize="12sp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_encode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:useCompatPadding="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_lock_close"
+        android:onClick="encodeImage"/>
+</RelativeLayout>

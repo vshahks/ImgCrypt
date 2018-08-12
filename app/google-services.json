@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "378125386260",
+    "firebase_url": "https://imgcrypt-75977.firebaseio.com",
+    "project_id": "imgcrypt-75977",
+    "storage_bucket": "imgcrypt-75977.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378125386260:android:393d4524d527eaf8",
+        "android_client_info": {
+          "package_name": "com.vshahks4578.imgencrypt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378125386260-5cs893ni5cm11obqjnbrum1bjpso7q3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vshahks4578.imgencrypt",
+            "certificate_hash": "2c7dbd5598ec75286f71c318c156e2fea3eab258"
+          }
+        },
+        {
+          "client_id": "378125386260-bb8pjpdrdg2nd84k9a17sk7aou555q20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkQ8iogDPGgDBgEJDoDAfVGbxWW3O8Ttc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378125386260-bb8pjpdrdg2nd84k9a17sk7aou555q20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
